@@ -24,11 +24,11 @@ For example: put all the above files and folders in the folder: "DECN"
 	
 ## 4.Compile a new kernel for each host
 	The steps to compile the new kernel are as follows:
-	### 4.1 Configure the relevant library files:
-		#### 4.1.1 Configuring the ncurses-devel library: yum install ncurses-devel. Otherwise, an error will be reported when executing the make menuconfig command.
-		#### 4.1.2 Install gcc and make libraries: yum -y install gcc automake autoconf libtool make, otherwise execute the command: make mrproper, error: make: gcc: Command not found
-		#### 4.1.3 Install bc:yum install bc, otherwise an error will be reported: bc: command not found
-		#### 4.1.4 Install epel-release, otherwise an error will be reported when installing iperf.
+	4.1 Configure the relevant library files:
+		4.1.1 Configuring the ncurses-devel library: yum install ncurses-devel. Otherwise, an error will be reported when executing the make menuconfig command.
+		4.1.2 Install gcc and make libraries: yum -y install gcc automake autoconf libtool make, otherwise execute the command: make mrproper, error: make: gcc: Command not found
+		4.1.3 Install bc:yum install bc, otherwise an error will be reported: bc: command not found
+		4.1.4 Install epel-release, otherwise an error will be reported when installing iperf.
 			A. First check if the system installs epel-release:
 				rpm -q epel-release, if package epel-release is not installed, it means that epel is not installed.
 			B. Install epel:
@@ -36,19 +36,19 @@ For example: put all the above files and folders in the folder: "DECN"
 				rpm–ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm Install 64bit-epel
 
 			C. rpm -q epel-release If epel-release-6-8.noarch is displayed, the epel installation is successful.
-		#### 4.1.5 Installing iperf:yum install iperf
-	### 4.2 Steps to compile the kernel:
-		#### 4.2.1 Clean up the previous compilation traces and keep the clean source code:
+		4.1.5 Installing iperf:yum install iperf
+	4.2 Steps to compile the kernel:
+		4.2.1 Clean up the previous compilation traces and keep the clean source code:
 				make mrproper
 				make clean
 				make menuconfig
-		#### 4.2.2 Compiling the kernel and kernel modules:
+		4.2.2 Compiling the kernel and kernel modules:
 				make clean
 				make bzImage
 				make modules
-		#### 4.2.3 Installing the kernel module:
+		4.2.3 Installing the kernel module:
 				make modules_install
-		#### 4.2.4 Installing the Kernel:
+		4.2.4 Installing the Kernel:
 				make install
 		4.2.5 Start a new kernel:
 				reboot
