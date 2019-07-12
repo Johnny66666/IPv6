@@ -50,7 +50,7 @@ note:
 				make modules_install
 		#### 4.2.4 Installing the Kernel:
 				make install
-		#### 4.2.5 Start a new kernel:
+		4.2.5 Start a new kernel:
 				reboot
 
 ## 5 Configure the topology:
