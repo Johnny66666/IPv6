@@ -54,7 +54,7 @@ note:
 				reboot
 
 ## 5 Configure the topology:
-	### 5.1 Client Configuration:
+	5.1 Client Configuration:
 		The first client
 		Ip address: 2001: db8:1::11
 		Prefix: 64
@@ -63,7 +63,7 @@ note:
 		Ip address: 2001: db8:1::12
 		Prefix: 64
 		Gateway: 2001: db8:1::1
-	### 5.2 Switch Configuration:
+	5.2 Switch Configuration:
 		Ens33 is the incoming network card, and ens37 is the outgoing network card.
 		Ens33:
 		Ip address: 2001: db8:1::1
@@ -73,7 +73,7 @@ note:
 		Ip address: 2001: db8: 2::1
 		Prefix: 64
 		Gateway: 2001: db8: 2::1
-	### 5.3 Server Configuration:
+	5.3 Server Configuration:
 		Ip address: 2001: db8: 2:: 11
 		Prefix: 64
 		Gateway: 2001: db8: 2::1
