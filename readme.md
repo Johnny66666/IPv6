@@ -34,7 +34,7 @@ For example: put all the above files and folders in the folder: "DECN"
 			B. Install epel:
 				rpm-ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm Install 32bit-epel or
 				rpm–ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm Install 64bit-epel
-note:
+
 			C. rpm -q epel-release If epel-release-6-8.noarch is displayed, the epel installation is successful.
 		#### 4.1.5 Installing iperf:yum install iperf
 	### 4.2 Steps to compile the kernel:
